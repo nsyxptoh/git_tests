@@ -3,13 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Nsyxptoh</title>
-
     </head>
     
-    
-    
-    
     <body>
+        <!-- Headings -->
+        <h3>Headings</h3>
         <div>
         <h1>H1 text</h1>
         <h2>H2 text</h2>
@@ -17,7 +15,9 @@
         <h4>H1 text</h4>
         <h5>H1 text</h5>
         <h6>H1 text</h6>
-        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</strong>
+        <hr>
+        <!-- Fonts Style -->
+        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos.</strong><br>
         <em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit facere ad consequuntur cum iure tempora, error quod qui asperiores in.</em>
         <pre>
             Lorem ipsum dolor sit, 
@@ -26,30 +26,129 @@
         </pre>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <sup>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, molestias!</sup>Exercitationem, adipisci.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <sub>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, reprehenderit!</sub>Exercitationem, adipisci.</p>
+        <p><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, reprehenderit! Exercitationem, adipisci.</u></p>
         </div>
-
+        <hr>
         <div>
 
             <!-- Ordered List -->
-
-            <ol list style="square">
+            <h3>Ordered List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>i</th>
+                        <th>A</th>
+                        <th>1</th>
+                        <th>a</th>
+                        <th>I</th>
+                    </tr>
+                </thead>
+            <tr>
+                <tbody>
+                <td><ol start="3" type="i">
                 <li>One</li>
                 <li>Two</li>
                 <li>Three</li>
                 <li>Four</li>
-            </ol>
+                </ol>
+                </td>
+                
+                <td>
+                <ol type="A">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                </ol>
+                </td>
 
+                <td>
+                    <ol type="1">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    </ol>
+                </td>
+
+                <td>
+                    <ol type="a">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    </ol>
+                </td>
+
+                <td>
+                    <ol type="I">
+                    <li>One</li>
+                    <li>Two</li>
+                    <li>Three</li>
+                    <li>Four</li>
+                    </ol>
+                </td>
+
+            </tr>
+            </tbody>
+            </table>
+
+            <p><strong>ol</strong>-ын ард <strong>start</strong> ашиглаж болно</p>
             <!-- Unordered List -->
-
-            <ul>
+<hr>
+            <h3>Unordered list</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>List</th>
+                        <th>Square</th>
+                        <th>Disc</th>
+                        <th>None</th>
+                    </tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>
+            <ul style="list-style-type:list">
                 <li>One</li>
                 <li>Two</li>
                 <li>Three</li>
                 <li>Four</li>
             </ul>
+                </td>
 
+                <td>
+            <ul style="list-style-type:square">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+                </td>
+            
+                <td>
+            <ul style="list-style-type:disc">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+                </td>
+
+                <td>
+            <ul style="list-style-type:none">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+                </td>
+            </tr>
+            </tbody>
+            </table>
             <!-- Nested List -->
-
+<hr>
+            <h3>Unordered list</h3>
             <ul>
                 <li>One</li>
                     <ul>
@@ -64,10 +163,11 @@
             </ul>
 
         </div>
-
+        <hr>
         <div>
             
             <!--- Table --->
+            <h3>Table</h3>
             <table>
             <thead>
                 <tr>
@@ -103,6 +203,110 @@
             </tbody>
             </table>
         </div>
+ <hr>
+
+        <!-- Form and Inputs -->
+
+        <h3>Form and Inputs</h3>
+                <form action="process.php">
+
+                <!-- Text -->
+
+                <div>
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" value="Ганзориг"><br>
+                <input type="submit">
+                </div>
+                <br>
+                <!-- Email -->
+                <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Та И-мэйл хаягаа бичнэ үү!"><br>
+                <input type="submit">
+                </div>
+                <br>
+                <!-- Date -->
+                <div>
+                <label for="date">Төрсөн он, сар, өдөр</label>
+                <input type="date" name="date" id="date">
+                </div>
+                <br>
+                <!-- Password -->
+                <div>
+                <label for="password">Нууц үг</label><br>
+                <input type="password" name="password" id="password" placeholder="Та нууц үгээ бичнэ үү!">
+                </div>
+                <br>
+                <!-- Message, Textarea -->
+                <div>
+                <label for="message">Санал сэтгэгдэл</label><br>
+                <textarea type="message" name="message" id="message" cols="30" rows="5"></textarea><br>
+                <input type="submit">
+                </div>
+                <br>
+                <!-- Select, Option -->
+                <div>
+                <label for="sex">Хүйс</label>
+                <select name="sex" id="sex" name="sex">
+                    <option value="male">Эрэгтэй</option>
+                    <option value="female" selected>Эмэгтэй</option>
+                </select>
+                </div>
+                <br>
+                <!-- Number -->
+                <div>
+                    <label for="age">Нас</label>
+                    <input type="number" min="0" max="150">
+                </div>
+                <br>
+                <!-- Radio -->
+                <div>
+                    <label for="membership">Гишүүнчлэл</label>
+                    <input type="radio" name="membership"
+                    value="basic" id="membership" checked>Энгийн 
+                    <input type="radio" name="membership"
+                    value="gold" id="membership">Алт 
+                    <input type="radio" name="membership"
+                    value="platinum" id="membership">Цагаан алт 
+                </div>
+                <br>
+                <!-- Checkbox -->
+                <div>
+                    <label for="hobbies">Сонирхол</label>
+                    <input type="checkbox" name="hobbies"
+                    value="movie" id="hobbies" checked>Кино 
+                    <input type="checkbox" name="hobbies"
+                    value="music" id="hobbies">Дуу 
+                    <input type="checkbox" name="hobbies"
+                    value="poem" id="hobbies">Шүлэг
+                    <input type="submit" value="Бүртгүүлэх">
+
+                    <!-- Button -->
+
+                    <button type="submit">Бүртгүүлэх</button>
+
+                    
+                </div>
+             </form>
+        </div>
+<hr>
+        <!-- Images and Links -->
+        <h3>Images and Links</h3>
+        <div>
+
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        <br>
+        <a href="https://www.google.mn">Google</a>
+
+        </div>
+        <!-- Same time Images and Links -->
+        <div>
+            <br>
+        <a href="https://www.google.mn">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </a>
+        </div>
+
     </body>
 
 
